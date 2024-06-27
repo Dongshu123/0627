@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>细化版个人网站</title>
+  </head>
+  <link rel="stylesheet" href="./细化版.css" />
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #d3edf0;
+      font-size: 13px;
+    }
+    /**{
+  border: 1px solid #8a8a8a;
+}**/
+    .flex {
+      display: flex;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .flex2 {
+      flex: 2;
+    }
+    .flex-jz {
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-j {
+      justify-content: center;
+    }
+    .flex-a {
+      align-items: center;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .mlq {
+      margin: 8px;
+    }
+    .mll {
+      margin-left: 8px;
+    }
+    .mlt {
+      margin-top: 8px;
+    }
+    .ml15 {
+      margin-left: 15px;
+    }
+    .shupj {
+      justify-content: space-around;
+    }
+    .huise {
+      background-color: #eafdff;
+    }
+    .baise {
+      background-color: #ffffff;
+    }
+    .jdjc {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .jc {
+      font-weight: bold;
+    }
+    .daojiao {
+      border-radius: 10px;
+    }
+    .daojiaoy {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .daojiaoz {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .yinying {
+      box-shadow: 2px 3px 2px #b2bfc4;
+    }
+  </style>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px" class="flex column jc">
+      <!-- 图片 -->
+      <div
+        style="height: 160px; padding: 10px; margin-bottom: px"
+        class="flex flex-jz huise daojiaoy yinying"
+      >
+        <img
+          src="http://gips0.baidu.com/it/u=1370402140,2009956566&fm=3028&app=3028&f=JPEG&fmt=auto?w=960&h=1280"
+          width="120px"
+          alt=""
+          class="daojiao"
+        />
+        <div style="margin-left: 10px; font-weight: bold">冬树</div>
+      </div>
+      <!-- 首页及功能 -->
+      <div
+        style="flex: 3; background-color: rgb(218, 255, 255)"
+        class="flex column shupj mlt daojiaoy yinying"
+      >
+        <!-- 首页 -->
+        <div style="height: 40px; font-size: 16px" class="flex flex-jz jc">
+          首页
+        </div>
+        <div style="margin-left: 20px" class="flex1 flex column">
+          <!-- 内容与互动 -->
+          <div class="flex flex1 flex-a">内容与互动</div>
+          <!-- 数据 -->
+          <div class="flex flex1 flex-a">数据</div>
+          <!-- 广告与服务 -->
+          <div class="flex flex1 flex-a">广告与服务</div>
+          <!-- 设置与开发 -->
+          <div class="flex flex1 flex-a">设置与开发</div>
+          <!-- 新的功能 -->
+          <div class="flex flex1 flex-a">新的功能</div>
+        </div>
+      </div>
+      <!-- 通知和个人中心 -->
+      <div style="flex: 1" class="flex column mlt huise daojiaoy yinying">
+        <!-- 通知中心 -->
+        <div style="margin: 15px 15px 0 8px">通知中心</div>
+        <!-- 个人中心 -->
+        <div style="margin: 30px 15px 0 8px">个人中心</div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 column flex mll">
+      <!-- 数据区 -->
+      <div style="height: 150px" class="flex mlt">
+        <!-- 原创内容 -->
+        <div
+          style="flex: 2; align-items: flex-start"
+          class="flex column flex-jz baise daojiao yinying"
+        >
+          <img
+            src="https://img1.baidu.com/it/u=487733523,2537255568&fm=253&fmt=auto&app=120&f=JPEG?w=502&h=500"
+            alt="头像"
+            width="50"
+            height="50"
+            class="ml15 daojiao"
+          />
+          <div style="margin-top: 15px" class="ml15">原创内容</div>
+          <div style="margin-top: 10px" class="ml15">总用户数</div>
+        </div>
+        <!-- 阅读数量 -->
+        <div
+          style="flex: 3; justify-content: flex-start; align-items: center"
+          class="flex baise mll shupj daojiaoz yinying"
+        >
+          <!-- 昨日阅读(次) -->
+          <div style="margin-left: 50px" class="flex1">昨日阅读(次)</div>
+          <!-- 昨日分享(次) -->
+          <div class="flex1">昨日分享(次)</div>
+          <!-- 昨日新增关注(人) -->
+          <div class="flex1">昨日新增关注(人)</div>
+        </div>
+      </div>
+      <!-- 创作区 -->
+      <div style="flex: 2" class="flex baise mlt column daojiaoz yinying">
+        <!-- 新的创作 -->
+        <div style="margin: 25px 0 0 25px; font-weight: bold; font-size: 15px">
+          新的创作
+        </div>
+        <div style="flex: 1" class="flex">
+          <!-- 图文消息 -->
+          <div style="" class="flex1 flex flex-jz">图文消息</div>
+          <!-- 选择已有图文 -->
+          <div class="flex1 flex flex-jz">选择已有图文</div>
+          <!-- 图片/文字 -->
+          <div class="flex1 flex flex-jz">图片/文字</div>
+          <!-- 视频消息 -->
+          <div class="flex1 flex flex-jz">视频消息</div>
+          <!-- 转载 -->
+          <div class="flex1 flex flex-jz">转载</div>
+          <!-- 音频消息 -->
+          <div class="flex1 flex flex-jz">音频消息</div>
+          <!-- 直播 -->
+          <div class="flex1 flex flex-jz">直播</div>
+        </div>
+      </div>
+      <!-- 发表区 -->
+      <div style="flex: 1" class="flex baise mlt daojiaoz yinying">
+        <!-- 最近发表 -->
+        <div style="margin: 20px 0 0 30px">最近发表</div>
+        <!-- 全部发表记录 -->
+        <div style="margin: 20px 0 0 720px">全部发表记录</div>
+      </div>
+    </div>
+  </body>
+</html>
